@@ -60,7 +60,7 @@ function draw() {
 
   // Título
   fill("#FFFF");
-  textAlign("CENTER");
+  textAlign("centro");
   textSize(40);
   text("ARQUEIRO ÉPICO", width / 2, 100);
 
@@ -84,7 +84,7 @@ function keyPressed() {
   if (keyCode === 32) {
     var posX = playerArcher.body.position.x;
     var posY = playerArcher.body.position.y;
-    var angle = playerArcher.body.angle;
+    var angle = playerArcher.body.angle+PI/2;
 
     var arrow = new PlayerArrow(posX, posY, 100, 10, angle);
 
